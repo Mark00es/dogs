@@ -1,19 +1,16 @@
-import { Body, Controller, Get, Post } from "@nestjs/common";
-import { CreateBookDto } from "./dto/create-book.dto";
+import {Body, Controller, Delete, Get, Param, Post, Put} from "@nestjs/common";
+import { CreateDogDto} from "./dto/create-book.dto";
 import { BooksService } from "./books.service";
 
-@Controller('books') // PREFIJO DE PATH OPCIONAL
+@Controller('dogs') // PREFIJO DE PATH OPCIONAL
 export class BooksController {
   constructor(private booksService: BooksService) {
   }
-  @Get() // PATH OPCIONAL
-  findAll(): string {
-    return 'Esta accion retorna todos los libros';
-  }
+  //@Post('foo')
   @Post()
-  create(@Body() createBookDto: CreateBookDto){
-    // return createBookDto;
-    return this.booksService.create(createBookDto);
+  create(@Body() createDogDto: CreateDogDto){
+    // return createDogDto;
+    return this.booksService.create(createDogDto);
   }
 }
 

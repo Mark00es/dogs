@@ -1,5 +1,5 @@
-export class CreateBookDto {
-  titulo: string;
-  autor: string;
-  paginas: number;
+export class CreateDogDto {
+  nombre: string;
+  raza: string;
+  edad: number;
 }

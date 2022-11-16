@@ -1,13 +1,13 @@
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
-export class Book {
+export class Dog {
   @PrimaryGeneratedColumn()
   id: number;
   @Column()
-  titulo: string;
+  nombre: string;
   @Column()
-  autor: string;
+  raza: string;
   @Column()
-  paginas: number;
+  edad: number;
 }

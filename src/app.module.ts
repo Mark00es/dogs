@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { BooksModule } from './books/books.module';
-import { TypeOrmModule } from "@nestjs/typeorm";
+import { TypeOrmModule } from '@nestjs/typeorm';
 import { SongsModule } from './songs/songs.module';
 
 @Module({
@@ -13,8 +13,8 @@ import { SongsModule } from './songs/songs.module';
       host: 'localhost',
       port: 3306,
       username: 'root',
-      password: '123456',
-      database: 'ucb',
+      password: 'Marco_mamica123',
+      database: 'dbdogs',
       synchronize: true,
       autoLoadEntities: true,
     }),
